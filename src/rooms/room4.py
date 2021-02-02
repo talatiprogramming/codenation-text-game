@@ -14,18 +14,16 @@ screen but you know nothing is that simple with the Riddler.
 You start up the treadmill and start a jog. You gradually increase the speed, running faster and faster until
 you're hitting 20km/h. A message pops up on the screen.
 
-"C'mon Bat-brains, you can do better than that!"
+"I think you need a little jolt in your step"
 
-You push up the speed further, breaking out a sweat as you hit 23km/h, then 25, then 28, then 30. Eventually you hit 35km/h
-- your lungs are burning, your muscles are about to give out. A message pops up on the screen.
+Two panels open up on the treadmill revealing extenable metal arms that clamp. A current of electricity tears
+through your body, causing excrutiating pain.
 
-"Nice workout?"
+You black out.
 
-The screen then flashes with a single letter - D
-
-You slow down and get off the treadmill, taking a moment to catch your breath.
+GAME OVER
 """)
-    room4_choice()
+    ending.start_again()
 
 def weights():
     print("""
@@ -45,19 +43,15 @@ attached to the wall.
 
 def clock():
     print("""
-You decide to take the clock off the wall in the hopes you might find a clue hidden inside. 
+You decide to take the clock off the wall in the hopes you might find a clue. At a closer glance you notice that 
+the hands aren't moving. It's broken.
 
-At a closer glance you notice that it's emanating a ticking noise yet the hands don't move. You pry open the back
-to get a closer look at its inner workings. Inside you find an odd contraption with a giant green question mark
-on it.
+You pry open the back to get a closer look at its inner workings. Inside you find a post-it note inside with a large
+letter 'O' written in green.
 
-It's a bomb.
-
-BOOM
-
-GAME OVER
+You place the clock back where it was and continue your investigation.
 """)
-    ending.start_again()
+    room4_choice()
  
 
 def room4_text():    
@@ -76,7 +70,7 @@ He runs all day,
 twice around the gym.
 What am I?"
 """)  
-    wait.wait()
+   
     
 def room4_choice():
     print("""

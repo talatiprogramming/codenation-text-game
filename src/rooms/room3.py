@@ -6,6 +6,30 @@ from src.rooms import room1
 from src.core import wait
 from src.core import ending
 
+def room3_choice():
+    print("""
+    What do you do?
+    1 Investigate the coffee machine
+    2 Investigate the fruit bowl
+    3 Investigate the cigarettes
+    4 Investigate the fridges
+    5 Go back to the entrance
+    """)
+    choice = input(">> ").lower()
+
+    if choice == "1":
+        coffee_machine()
+    elif choice == "2":
+        fruit_bowl()
+    elif choice == "3":
+        cigarettes()
+    elif choice == "4":
+        fridges()
+    elif choice == "5":
+        wait.go_back()
+    else:
+        print("Please pick a valid option")
+
 def room3_text():
     print("""
 You make your way to the building's cafeteria - a large hall filled with circlular tables and plastic chairs
@@ -45,7 +69,7 @@ healthy option it seems. You find nothing out of the ordinary as you inspect the
 
 You continue with your investigation
 """)
-    room2_choice()
+    room3_choice()
 
 def cigarettes():
     print("""
@@ -56,7 +80,7 @@ You open it up and dump the contents into your hand, only to find it doesn't con
 note. Opening up the note reveals a giant green 'O' painted onto it. Finding nothing else, you discard the note
 and continue with your investigation.
 """)
-    room2_choice()
+    room3_choice()
 
 def fridges():
     print("""
@@ -66,33 +90,8 @@ of sugar, salt and pepper.
 
 There's nothing here that stands out to you. You get up and continue your investgation.
 """)
-    room2_choice()
+    room3_choice()
 
-
-
-def room3_choice():
-    print("""
-    What do you do?
-    1 Investigate the coffee machine
-    2 Investigate the fruit bowl
-    3 Investigate the cigarettes
-    4 Investigate the fridges
-    5 Go back to the entrance
-    """)
-    choice = input(">> ").lower()
-
-    if choice == "1":
-        coffee_machine()
-    elif choice == "2":
-        fruit_bowl()
-    elif choice == "3":
-        cigarettes()
-    elif choice == "4":
-        fridges()
-    elif choice == "5":
-        wait.go_back()
-    else:
-        print("Please pick a valid option")
 
 def room3():
     room3_text()

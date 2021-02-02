@@ -6,6 +6,32 @@ from src.rooms import room1
 from src.core import wait
 from src.core import ending
 
+def room5_choice():
+    print("""
+What do you do?
+
+1 Investigate the posters
+2 Investigate the fridge
+3 Investigate the computer
+4 Investigate the door 
+5 Go back to the entrance
+""")
+    choice = input(">> ").lower()
+
+    if choice == "1":
+        posters()
+    elif choice == "2":
+        fridge()
+    elif choice == "3":
+        computer()
+    elif choice == "4":
+        door()
+    elif choice == "5":
+        wait.go_back()
+    else:
+        print("Not a valid option")
+        room5()
+
 def posters():
     print("""
 You look to the posters next to the note. They depict art from Justice Brawl 2 and the Arkham Asylum game. 
@@ -32,7 +58,7 @@ is, oddly, a light green colour.
 
 You type the word 'enigma' into the text box.
 
-A large O appears on the screen and the computer switches itself off.
+A large M appears on the screen and the computer switches itself off.
 """)
     room5_choice()
 
@@ -52,31 +78,6 @@ GAME OVER
 """)
     ending.start_again()
 
-def room5_choice():
-    print("""
-What do you do?
-
-1 Investigate the posters
-2 Investigate the fridge
-3 Investigate the computer
-4 Investigate the door 
-5 Go back to the entrance
-""")
-    choice = input(">> ").lower()
-
-    if choice == "1":
-        posters()
-    elif choice == "2":
-        fridge()
-    elif choice == "3":
-        computer()
-    elif choice == "4":
-        door()
-    elif choice == "5":
-        wait.go_back()
-    else:
-        print("Not a valid option")
-        room5()
     
 def room5_text():
     print("""

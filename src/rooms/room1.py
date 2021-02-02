@@ -16,16 +16,18 @@ def guess_pass():
     while pass_attempt < 3:
         pass_input = input("\nPlease enter the passcode:\n").upper()
         if pass_input == "DOOM":
+            pass_attempt += 3            
             ending.ending()
         else:
             pass_attempt += 1
             if pass_attempt < 3:
                 print("\nWrong password, try again")
+            elif pass_attempt == 3:
+                print("DEATH")
+                quit()
             else:
-                wait.wait()            
-    print("\nDEATH")
-    quit()
-
+                pass           
+    
 def elevator_choice():
     print("\nThe elevator has a small keypad attached to it.")
     choice = input("""

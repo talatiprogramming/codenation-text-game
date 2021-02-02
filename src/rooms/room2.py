@@ -42,6 +42,31 @@ losing consciousness is a green figure standing above you.
 GAME OVER""")
     ending.start_again()
 
+def room2_choice():
+    print("""
+What do you do?
+
+1 Investigate the bonsai
+2 Investigate the photocopier
+3 Investigate the laptops
+4 Investigate the documents
+5 Go back to the entrance
+""")
+    choice = input(">> ").lower()
+
+    if choice == "1":
+        bonsai()
+    elif choice == "2":
+        photocopier()
+    elif choice == "3":
+        laptop()
+    elif choice == "4":
+        documents()
+    elif choice == "5":
+        wait.go_back()
+    else:
+        print("Please pick a valid option")
+
 def photocopier():
     print("""
 You walk towards the photocopier that's been left on. It emits a faint glow in the dark of the office, almost
@@ -77,30 +102,6 @@ You roll your eyes and continue your investigation.
     room2_choice()
 
 
-def room2_choice():
-    print("""
-    What do you do?
-
-    1 Investigate the bonsai
-    2 Investigate the photocopier
-    3 Investigate the laptops
-    4 Investigate the documents
-    5 Go back to the entrance
-    """)
-    choice = input(">> ").lower()
-
-    if choice == "1":
-        bonsai()
-    elif choice == "2":
-        photocopier()
-    elif choice == "3":
-        laptop()
-    elif choice == "4":
-        documents()
-    elif choice == "5":
-        wait.go_back()
-    else:
-        print("Please pick a valid option")
 
 def room2():
     room2_text()
