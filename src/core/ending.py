@@ -1,17 +1,16 @@
 from src.core import wait
 from src.core import intro
-
 def start_again():
     choice = input("""
-    Do you wish to start again or quit?:
-    
-    1 Quit
-    2 Start over
+Do you wish to start again or quit?:
+
+1 Quit
+2 Start over
     """)
     if choice == "1":
         quit()
     elif choice == "2":
-        intro.start()
+        pass
     else:
         print("Please enter a valid option")
         start_again()
@@ -44,7 +43,9 @@ You lunge for Riddler, tackling him as you both tumble and fight while travellin
 The boom tube takes you back onto the streets of Gotham where a bruised and bloodied Riddler lies beneath
 you, smiling up at you with cracked teeth. You arrest him without any resistance and take him back to
 Arkham, the shadow of guilt hanging over you. 
-
+""")
+    wait.wait()
+    print("""
 Word gets out about what happened that night. How Batman put justice above the lives of the innocent.
 Batman finds himself under the scorn of the Justice League and resigns membership a few months later.
 The papers, controlled by the biggest gangs of Gotham, use the opportunity to relentless tarnish
@@ -56,8 +57,7 @@ broken, unconcsious bodies around him. He notices a gun on the group that one of
 during the chaos. He leans down and picks it up. 
 
 A large grin stretches across his face as he begins to laugh uncontrollably.
-    """)
-    wait.wait()
+""")
     start_again()
 
 def ending2():
@@ -67,7 +67,9 @@ together and shout for them to run to the elevator, leaving the bomb behind to d
 plans Lex Luthor had running here. The hostages escape the building in time as you disappear into the night,
 doubt lingering at the back of your mind as to whether you did the right thing. You begin the hunt for the Riddler
 again.
-
+""")
+    wait.wait()
+    print("""
 Soon after the incident Batman found Riddler again but it was too late. He was dead. His body lay in a random
 alley of Gotham.
 Word had gotten out about the code and what it could do. Forces superior to the Riddler got a hold of it and quickly
@@ -82,17 +84,16 @@ under tyranny, with no one left to protect them.
 Batman hides among the streets of Gotham, one of the few survivors of the League, building a resistance in 
 the hopes to overthrow the new global regime.
 """)
-    wait.wait()
     start_again()
 
 
 def ending_choice():
     choice = input("""
-    What do you do?:
-    
-    1 Chase after Riddler through the portal
-    2 Let Riddler escape and defuse the bomb
-    """)
+What do you do?:
+
+1 Chase after Riddler through the portal
+2 Let Riddler escape and defuse the bomb
+""")
 
     if choice == "1":
         ending1()

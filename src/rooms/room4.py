@@ -53,7 +53,7 @@ on it.
 
 It's a bomb.
 
-KABOOM
+BOOM
 
 GAME OVER
 """)

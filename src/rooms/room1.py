@@ -3,6 +3,8 @@
 ##############
 
 from src.core import wait 
+from src.rooms import room2
+from src.rooms import room3
 from src.rooms import room4
 from src.rooms import room5
 from src.core import ending
@@ -27,8 +29,8 @@ def guess_pass():
 def elevator_choice():
     print("\nThe elevator has a small keypad attached to it.")
     choice = input("""
-    1 - Attempt the password
-    2 - Return to the entrance
+1 - Attempt the password
+2 - Return to the entrance
     """)    
     if choice == "1":
         guess_pass()
@@ -78,19 +80,20 @@ of the building.
         print("\nYou're back in the main entrance.")
 
 def room1_choice(): 
-    choice = input("""\nWhere do you want to go?:
+    choice = input("""
+Where do you want to go?:
     
-    1 - The Office
-    2 - The Cafeteria
-    3 - The Server room
-    4 - The Gym
-    5 - The elevator
-    """)
+1 - The Office
+2 - The Cafeteria
+3 - The Server room
+4 - The Gym
+5 - The elevator
+>> """)
 
     if choice == "1":
-        print("room2")
+        room2.room2()
     elif choice == "2":
-        print("room3")
+        room3.room3()
     elif choice == "3":
         room5.room5()
     elif choice == "4":
