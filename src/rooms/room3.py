@@ -8,13 +8,13 @@ from src.core import ending
 
 def room3_choice():
     print("""
-    What do you do?
-    1 Investigate the coffee machine
-    2 Investigate the fruit bowl
-    3 Investigate the cigarettes
-    4 Investigate the fridges
-    5 Go back to the entrance
-    """)
+What do you do?
+1 Investigate the coffee machine
+2 Investigate the fruit bowl
+3 Investigate the cigarettes
+4 Investigate the fridges
+5 Go back to the entrance
+""")
     choice = input(">> ").lower()
 
     if choice == "1":

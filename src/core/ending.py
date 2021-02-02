@@ -6,7 +6,8 @@ Do you wish to start again or quit?:
 
 1 Quit
 2 Start over
-    """)
+
+""")
     if choice == "1":
         quit()
     elif choice == "2":

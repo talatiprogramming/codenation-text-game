@@ -33,7 +33,8 @@ def elevator_choice():
     choice = input("""
 1 - Attempt the password
 2 - Return to the entrance
-    """)    
+
+""")    
     if choice == "1":
         guess_pass()
     elif choice == "2":        
@@ -55,7 +56,7 @@ After months of investigation and interrogation, Batman managed to track the new
 
 Time is crucial, you will no doubt have to play the Riddler's game before you can get to him and, hopefully,
 the virus.
- """)
+""")
     wait.wait()
     
 def room1_flavour():
@@ -76,7 +77,7 @@ here that you will want to see."
 
 There's a sign above you with directions to the different parts
 of the building. 
-        """)
+""")
         wait.wait()
     else:
         print("\nYou're back in the main entrance.")
@@ -90,6 +91,7 @@ Where do you want to go?:
 3 - The Server room
 4 - The Gym
 5 - The elevator
+
 >> """)
 
     if choice == "1":
